@@ -1,0 +1,24 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3"><i class="fas fa-person-booth"></i> Change Name</h1>
+        <form action="/users/changename" method="POST">
+            <div class="form-group">
+                <label for="name">New Name</label>
+                <input
+                  type="name"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter Name"
+                  value="<%= typeof name != 'undefined' ? name : '' %>"
+                />
+              </div>
+          <hr>
+          <%- include ("./partials/messages"); %>
+          <button type="submit" class="btn btn-primary col-12 mb-2">Submit</button>
+        </form>
+        <a href="/dashboard" class="btn btn-secondary btn-block mb-2">Back</a>
+      </div>
+    </div>
+  </div>

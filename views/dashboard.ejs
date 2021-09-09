@@ -1,0 +1,16 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body text-center">
+        <h1 class="mt-4"><i class="fas fa-gamepad"></i> Account Dashboard</h1>
+        <p class="lead mb-3">Welcome, <%= name %>!</p>
+        <%- include ("./partials/messages"); %>
+        <img src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" class="img-fluid" alt="oh lawd">
+        <hr>
+        <a href="/dashboard/changename" class="btn btn-primary btn-block mb-2">Change Name</a>
+        <a href="/dashboard/changepassword" class="btn btn-warning btn-block mb-2">Change Password</a>
+        <a href="/dashboard/delete" class="btn btn-danger btn-block mb-2">Delete Account</a>
+        <hr>
+        <a href="/users/logout" class="btn btn-secondary btn-block mb-2">Logout</a>
+      </div>
+    </div>
+  </div>
